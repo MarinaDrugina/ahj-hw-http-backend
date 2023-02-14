@@ -1,0 +1,30 @@
+{
+  "name": "http-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "forever server.js",
+    "watch": "forever -w server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarinaDrugina/ahj-hw-http-backend.git"
+  },
+  "author": "MarinaDrugina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarinaDrugina/ahj-hw-http-backend/issues"
+  },
+  "homepage": "https://github.com/MarinaDrugina/ahj-hw-http-backend#readme",
+  "dependencies": {
+    "forever": "^4.0.3",
+    "koa": "^2.14.1",
+    "koa-body": "^6.0.1",
+    "koa-cors": "^0.0.16",
+    "koa-static": "^5.0.0",
+    "path": "^0.12.7",
+    "uuid": "^9.0.0"
+  }
+}
