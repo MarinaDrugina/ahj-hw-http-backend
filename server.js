@@ -2,7 +2,7 @@ const http = require("http");
 const path = require("path");
 const Koa = require('koa');
 const app = new Koa();
-const koaBody = require('koa-body');
+const koaBody = require("koa-body");
 const cors = require('koa-cors');
 
 const public = path.join(__dirname, "/public");
