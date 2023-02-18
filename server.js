@@ -1,11 +1,9 @@
 const http = require("http");
-const path = require("path");
 const Koa = require('koa');
 const app = new Koa();
-const koaBody = require("koa-body");
+const koaBody = require('koa-body').default;
 const cors = require('koa-cors');
-
-const public = path.join(__dirname, "/public");
+const uuid = require('uuid');
 
 const tickets = [
     {
@@ -105,6 +103,4 @@ app.use(async ctx => {
 });
 
 const port = process.env.PORT || 7070;
-const server = http.createServer(app.callback()).listen(port)
-
-// app.listen(port);
+const server = http.createServer(app.callback()).listen(port);
